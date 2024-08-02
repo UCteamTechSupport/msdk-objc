@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Usercentrics/Usercentrics.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UsercentricsUsercentricsOptions *options = [[UsercentricsUsercentricsOptions alloc] initWithSettingsId: @"WGSo-AvsCxM5d2"];
+    options.loggerLevel = UsercentricsUsercentricsLoggerLevel.debug;
+        [UsercentricsUsercentricsKt configureOptions:options];
     return YES;
 }
 

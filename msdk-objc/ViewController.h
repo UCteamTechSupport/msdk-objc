@@ -6,6 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "msdk-objc-Bridging-Header.h"
+
 
 @interface ViewController : UIViewController
 

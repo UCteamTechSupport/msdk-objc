@@ -14,7 +14,28 @@
 		B1A7BD3D2C5D08EF001D1EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A7BD3C2C5D08EF001D1EFA /* Assets.xcassets */; };
 		B1A7BD402C5D08EF001D1EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A7BD3E2C5D08EF001D1EFA /* LaunchScreen.storyboard */; };
 		B1A7BD432C5D08EF001D1EFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A7BD422C5D08EF001D1EFA /* main.m */; };
+		B1A7BD4E2C5D09A8001D1EFA /* UsercentricsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7BD4D2C5D09A8001D1EFA /* UsercentricsHelper.swift */; };
+		B1A7BD542C5D14EA001D1EFA /* Usercentrics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A7BD532C5D14EA001D1EFA /* Usercentrics.xcframework */; };
+		B1A7BD552C5D14EA001D1EFA /* Usercentrics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1A7BD532C5D14EA001D1EFA /* Usercentrics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1A7BD582C5D14F1001D1EFA /* UsercentricsUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A7BD572C5D14F1001D1EFA /* UsercentricsUI.xcframework */; };
+		B1A7BD592C5D14F1001D1EFA /* UsercentricsUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1A7BD572C5D14F1001D1EFA /* UsercentricsUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1A7BD5B2C5D1512001D1EFA /* UsercentricsUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1A7BD5A2C5D1512001D1EFA /* UsercentricsUIResources.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1A7BD562C5D14EA001D1EFA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1A7BD552C5D14EA001D1EFA /* Usercentrics.xcframework in Embed Frameworks */,
+				B1A7BD592C5D14F1001D1EFA /* UsercentricsUI.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B1A7BD2D2C5D08EE001D1EFA /* msdk-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msdk-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +50,11 @@
 		B1A7BD3F2C5D08EF001D1EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1A7BD412C5D08EF001D1EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1A7BD422C5D08EF001D1EFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1A7BD4C2C5D09A8001D1EFA /* msdk-objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "msdk-objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1A7BD4D2C5D09A8001D1EFA /* UsercentricsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsercentricsHelper.swift; sourceTree = "<group>"; };
+		B1A7BD532C5D14EA001D1EFA /* Usercentrics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Usercentrics.xcframework; path = "LocalFrameworks/Usercentrics-2.15.4-unity-static.xcframework/Usercentrics.xcframework"; sourceTree = "<group>"; };
+		B1A7BD572C5D14F1001D1EFA /* UsercentricsUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UsercentricsUI.xcframework; path = "LocalFrameworks/UsercentricsUI-Manual-Linking-2.15.2-static.xcframework/UsercentricsUI.xcframework"; sourceTree = "<group>"; };
+		B1A7BD5A2C5D1512001D1EFA /* UsercentricsUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UsercentricsUIResources.bundle; path = "LocalFrameworks/UsercentricsUI-Manual-Linking-2.15.2-static.xcframework/UsercentricsUIResources.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A7BD542C5D14EA001D1EFA /* Usercentrics.xcframework in Frameworks */,
+				B1A7BD582C5D14F1001D1EFA /* UsercentricsUI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +73,10 @@
 		B1A7BD242C5D08EE001D1EFA = {
 			isa = PBXGroup;
 			children = (
+				B1A7BD5A2C5D1512001D1EFA /* UsercentricsUIResources.bundle */,
 				B1A7BD2F2C5D08EE001D1EFA /* msdk-objc */,
 				B1A7BD2E2C5D08EE001D1EFA /* Products */,
+				B1A7BD522C5D14EA001D1EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +102,19 @@
 				B1A7BD3E2C5D08EF001D1EFA /* LaunchScreen.storyboard */,
 				B1A7BD412C5D08EF001D1EFA /* Info.plist */,
 				B1A7BD422C5D08EF001D1EFA /* main.m */,
+				B1A7BD4D2C5D09A8001D1EFA /* UsercentricsHelper.swift */,
+				B1A7BD4C2C5D09A8001D1EFA /* msdk-objc-Bridging-Header.h */,
 			);
 			path = "msdk-objc";
+			sourceTree = "<group>";
+		};
+		B1A7BD522C5D14EA001D1EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A7BD572C5D14F1001D1EFA /* UsercentricsUI.xcframework */,
+				B1A7BD532C5D14EA001D1EFA /* Usercentrics.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,12 +127,15 @@
 				B1A7BD292C5D08EE001D1EFA /* Sources */,
 				B1A7BD2A2C5D08EE001D1EFA /* Frameworks */,
 				B1A7BD2B2C5D08EE001D1EFA /* Resources */,
+				B1A7BD562C5D14EA001D1EFA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "msdk-objc";
+			packageProductDependencies = (
+			);
 			productName = "msdk-objc";
 			productReference = B1A7BD2D2C5D08EE001D1EFA /* msdk-objc.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +151,7 @@
 				TargetAttributes = {
 					B1A7BD2C2C5D08EE001D1EFA = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -119,6 +164,8 @@
 				Base,
 			);
 			mainGroup = B1A7BD242C5D08EE001D1EFA;
+			packageReferences = (
+			);
 			productRefGroup = B1A7BD2E2C5D08EE001D1EFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A7BD5B2C5D1512001D1EFA /* UsercentricsUIResources.bundle in Resources */,
 				B1A7BD402C5D08EF001D1EFA /* LaunchScreen.storyboard in Resources */,
 				B1A7BD3D2C5D08EF001D1EFA /* Assets.xcassets in Resources */,
 				B1A7BD3B2C5D08EE001D1EFA /* Main.storyboard in Resources */,
@@ -146,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A7BD4E2C5D09A8001D1EFA /* UsercentricsHelper.swift in Sources */,
 				B1A7BD382C5D08EE001D1EFA /* ViewController.m in Sources */,
 				B1A7BD322C5D08EE001D1EFA /* AppDelegate.m in Sources */,
 				B1A7BD432C5D08EF001D1EFA /* main.m in Sources */,
@@ -296,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GB94SV7D4;
@@ -314,6 +364,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uc.msdk-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "msdk-objc/msdk-objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GB94SV7D4;
@@ -341,6 +395,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uc.msdk-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "msdk-objc/msdk-objc-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "msdk_objc-Swift.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UsercentricsHelper *helper = [[UsercentricsHelper alloc] init];
+        [helper displayBanner];
 }
 
 
